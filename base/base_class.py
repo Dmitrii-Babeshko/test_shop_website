@@ -51,7 +51,7 @@ class Base():
         self.driver.execute_script(f'window.scrollTo({left_right}, {up_down})')
 
     def wait_loading(self):
-        sleep(5)
+        sleep(4)
 
     def print_current_url(self):
         url = self.driver.current_url
