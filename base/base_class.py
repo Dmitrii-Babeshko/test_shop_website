@@ -51,7 +51,7 @@ class Base():
         self.driver.execute_script(f'window.scrollTo({left_right}, {up_down})')
 
     def wait_loading(self):
-        sleep(5)
+        sleep(4)
 
     def print_current_url(self):
         url = self.driver.current_url
@@ -65,7 +65,7 @@ class Base():
     def get_screenshot(self):
         now_date = datetime.now(timezone(timedelta(hours=3), "UTC+3")).strftime("%d.%m.%Y %H.%M.%S %Z")
         screenshot_name = 'Shop_test ' + now_date + '.png'
-        self.driver.save_screenshot(f'C:/Pycharm/test_shop/screen/' + screenshot_name)
+        self.driver.save_screenshot(f'C:\\Pycharm\\test_shop_website\\screen\\' + screenshot_name)
 
     def assert_and_print_url(self, result):
         url = self.driver.current_url

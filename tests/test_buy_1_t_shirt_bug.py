@@ -20,4 +20,3 @@ def test_buy_product_1():
     men.filter_and_choose_t_shirt()
     products = Products(driver)
     products.t_shirt_paul_and_shark_add_to_cart()
-    sleep(10)

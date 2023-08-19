@@ -1,0 +1,132 @@
+
+-----
+Test: test_buy_1_t_shirt_bug.py::test_buy_product_1 (call)
+Start time: 2023-08-19 16:43:18.888755
+Start name method: authorization
+
+End time: 2023-08-19 16:43:27.635946
+End name method: authorization
+URL: https://elitesport.ge/en/
+
+-----
+
+-----
+Test: test_buy_1_t_shirt_bug.py::test_buy_product_1 (call)
+Start time: 2023-08-19 16:43:27.636926
+Start name method: filter_and_choose_t_shirt
+
+End time: 2023-08-19 16:43:57.181190
+End name method: filter_and_choose_t_shirt
+URL: https://elitesport.ge/en/mens-t-shirt-hypers-23006-02/
+
+-----
+
+-----
+Test: test_buy_1_t_shirt_bug.py::test_buy_product_1 (call)
+Start time: 2023-08-19 16:43:57.182160
+Start name method: t_shirt_paul_and_shark_add_to_cart
+
+End time: 2023-08-19 16:43:58.973113
+End name method: t_shirt_paul_and_shark_add_to_cart
+URL: https://elitesport.ge/en/mens-t-shirt-hypers-23006-02/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:03.225008
+Start name method: authorization
+
+End time: 2023-08-19 16:44:12.087172
+End name method: authorization
+URL: https://elitesport.ge/en/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:12.088173
+Start name method: filter_the_1st_variant
+
+End time: 2023-08-19 16:44:39.425902
+End name method: filter_the_1st_variant
+URL: https://elitesport.ge/en/mens/?s=&price_min=65&price_max=260&size[]=XL&sort=cheap
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:39.426905
+Start name method: choose_1st_product
+
+End time: 2023-08-19 16:44:41.805036
+End name method: choose_1st_product
+URL: https://elitesport.ge/en/mens-polo-longsleeve-tommy-hilfiger-7056/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:41.806035
+Start name method: add_to_cart_xl_product
+
+End time: 2023-08-19 16:44:43.513857
+End name method: add_to_cart_xl_product
+URL: https://elitesport.ge/en/mens-polo-longsleeve-tommy-hilfiger-7056/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:44.000856
+Start name method: choose_2nd_product
+
+End time: 2023-08-19 16:44:50.950218
+End name method: choose_2nd_product
+URL: https://elitesport.ge/en/mens-t-shirt-hypers-tokyo-01/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:50.951220
+Start name method: add_to_cart_xl_product
+
+End time: 2023-08-19 16:44:52.603183
+End name method: add_to_cart_xl_product
+URL: https://elitesport.ge/en/mens-t-shirt-hypers-tokyo-01/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:53.088186
+Start name method: choose_3_product
+
+End time: 2023-08-19 16:44:59.469236
+End name method: choose_3_product
+URL: https://elitesport.ge/en/mens-denim-jeans-dimoled-d064-01/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:44:59.470235
+Start name method: add_to_cart_xl_product
+
+End time: 2023-08-19 16:45:01.086045
+End name method: add_to_cart_xl_product
+URL: https://elitesport.ge/en/mens-denim-jeans-dimoled-d064-01/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-19 16:45:02.211843
+Start name method: check_total_to_pay
+
+End time: 2023-08-19 16:45:03.103062
+End name method: check_total_to_pay
+URL: https://elitesport.ge/en/checkout/
+
+-----

@@ -11,7 +11,7 @@ from pages.Products_page import Products
 #@pytest.mark.run(order=1)
 def test_buy_product_2():
     options = webdriver.ChromeOptions()
-    options.add_experimental_option("detach", False)  # False/True Закрытие/нет браузера
+    options.add_experimental_option("detach", True)  # False/True Закрытие/нет браузера
     options.page_load_strategy = 'normal' # normal/eager/none загружать/нет полностью страницы
     driver = webdriver.Chrome(options=options, service=Service())
     print('Start test 2')

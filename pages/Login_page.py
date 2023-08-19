@@ -1,4 +1,6 @@
 from base.base_class import Base
+from utilities.logger import Logger
+
 
 class Login(Base):
 
@@ -55,6 +57,7 @@ class Login(Base):
     #Methods
 
     def authorization(self):
+        Logger.add_start_step(method='authorization')
         self.driver.get(self.url)
         self.driver.maximize_window()
         self.click_login_button()
@@ -62,3 +65,4 @@ class Login(Base):
         self.input_password(self.password_text_xpath)
         self.click_login_continue_button()
         self.assert_word(self.get_cabinet_user_name(), 'Dimitrii')
+        Logger.add_end_step(url=self.driver.current_url, method='authorization')

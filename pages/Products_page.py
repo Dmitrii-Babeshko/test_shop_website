@@ -3,6 +3,9 @@ from time import sleep
 from base.base_class import Base
 from decimal import Decimal
 
+from utilities.logger import Logger
+
+
 class Products(Base):
 
     def __init__(self, driver):
@@ -63,18 +66,21 @@ class Products(Base):
     #Methods
 
     def t_shirt_paul_and_shark_add_to_cart(self):
-        #self.click_xl_size()
+        Logger.add_start_step(method='t_shirt_paul_and_shark_add_to_cart')
         self.scroll_to_xpath_locator(self.add_to_cart_locator_xpath)
         self.click_add_to_cart()
         print('Bug, button is not clickable')
         sleep(1)
         self.get_screenshot()
+        Logger.add_end_step(url=self.driver.current_url, method='t_shirt_paul_and_shark_add_to_cart')
 
     def add_to_cart_xl_product(self):
+        Logger.add_start_step(method='add_to_cart_xl_product')
         self.click_xl_size()
         self.add_to_sum_price()
         self.click_add_to_cart()
         self.click_continue_shopping()
+        Logger.add_end_step(url=self.driver.current_url, method='add_to_cart_xl_product')
 
 
 
