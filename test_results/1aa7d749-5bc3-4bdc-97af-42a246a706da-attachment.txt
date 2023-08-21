@@ -1,0 +1,15 @@
+Start test 1
+Click login button
+Input user login
+Password has been set
+Click login continue button
+Word "Dimitrii" is on the page
+Click men cloth button
+Change left price filter
+Change right price filter
+Min price "65", max price 260 checked
+Click xl checkbox
+Choose sort button ascending price
+Click t shirt paul and shark
+Click t shirt paul and shark add to cart
+Bug, button is not clickable

@@ -2,12 +2,10 @@ from time import sleep
 from selenium.webdriver import Keys
 from base.base_class import Base
 from utilities.logger import Logger
+import allure
 
 
 class Men_Cloth(Base):
-
-    def __init__(self, driver):
-        super().__init__(driver)
 
     #locators
     men_cloth_button_xpath = '//a[@href="https://elitesport.ge/en/mens/"]'
@@ -132,32 +130,36 @@ class Men_Cloth(Base):
 
 
     def filter_the_1st_variant(self):
-        Logger.add_start_step(method='filter_the_1st_variant')
-        self.click_men_cloth_button()
-        self.move_left_price_holder(4)
-        self.move_right_price_holder(-40)
-        self.check_price_filter()
-        self.scroll_to_xpath_locator(self.xl_checkbox_xpath)
-        self.click_xl_checkbox()
-        self.click_sort_button_ascending_price()
-        Logger.add_end_step(url=self.driver.current_url, method='filter_the_1st_variant')
+        with allure.step('filter the 1st variant'):
+            Logger.add_start_step(method='filter_the_1st_variant')
+            self.click_men_cloth_button()
+            self.move_left_price_holder(4)
+            self.move_right_price_holder(-40)
+            self.check_price_filter()
+            self.scroll_to_xpath_locator(self.xl_checkbox_xpath)
+            self.click_xl_checkbox()
+            self.click_sort_button_ascending_price()
+            Logger.add_end_step(url=self.driver.current_url, method='filter_the_1st_variant')
     def choose_1st_product(self):
-        Logger.add_start_step(method='choose_1st_product')
-        self.scroll_to_xpath_locator(self.product_1_xpath)
-        self.click_tracksuit()
-        Logger.add_end_step(url=self.driver.current_url, method='choose_1st_product')
+        with allure.step('choose 1st product'):
+            Logger.add_start_step(method='choose_1st_product')
+            self.scroll_to_xpath_locator(self.product_1_xpath)
+            self.click_tracksuit()
+            Logger.add_end_step(url=self.driver.current_url, method='choose_1st_product')
 
     def choose_2nd_product(self):
-        Logger.add_start_step(method='choose_2nd_product')
-        self.wait_loading()
-        self.scroll_to_xpath_locator(self.product_2_xpath)
-        self.click_product_2()
-        Logger.add_end_step(url=self.driver.current_url, method='choose_2nd_product')
+        with allure.step('choose 2nd product'):
+            Logger.add_start_step(method='choose_2nd_product')
+            self.wait_loading()
+            self.scroll_to_xpath_locator(self.product_2_xpath)
+            self.click_product_2()
+            Logger.add_end_step(url=self.driver.current_url, method='choose_2nd_product')
 
     def choose_3_product(self):
-        Logger.add_start_step(method='choose_3_product')
-        self.wait_loading()
-        self.scroll_to_xpath_locator(self.product_3_xpath)
-        self.click_hypers_t_shirt()
-        Logger.add_end_step(url=self.driver.current_url, method='choose_3_product')
+        with allure.step('choose 3 product'):
+            Logger.add_start_step(method='choose_3_product')
+            self.wait_loading()
+            self.scroll_to_xpath_locator(self.product_3_xpath)
+            self.click_hypers_t_shirt()
+            Logger.add_end_step(url=self.driver.current_url, method='choose_3_product')
 

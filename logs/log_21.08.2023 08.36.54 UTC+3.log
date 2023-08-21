@@ -1,0 +1,17 @@
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-21 09:37:01.204527
+Start name method: authorization
+
+End time: 2023-08-21 09:37:19.843654
+End name method: authorization
+URL: https://elitesport.ge/en/
+
+-----
+
+-----
+Test: test_buy_2_products.py::test_buy_product_2 (call)
+Start time: 2023-08-21 09:37:19.844752
+Start name method: filter_the_1st_variant
+

@@ -1,0 +1,33 @@
+Start test 2
+Click login button
+Input user login
+Password has been set
+Click login continue button
+Word "Dimitrii" is on the page
+Click men cloth button
+Change left price filter
+Change right price filter
+Min price "65", max price 260 checked
+Click xl checkbox
+Choose sort button ascending price
+Click tracksuit
+Click xl size
+69 Gel
+Total payable: 69 GEL
+Click t shirt paul and shark add to cart
+Click continue shopping
+Click yachting_t_shirt
+Click xl size
+67 Gel
+Total payable: 136 GEL
+Click t shirt paul and shark add to cart
+Click continue shopping
+Click hypers t shirt
+Click xl size
+89 Gel
+Total payable: 225 GEL
+Click t shirt paul and shark add to cart
+Click continue shopping
+Click go to cart button
+1st total to pay field is checked
+2nd total to pay field is checked

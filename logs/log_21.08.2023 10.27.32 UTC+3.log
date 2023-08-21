@@ -1,0 +1,33 @@
+
+-----
+Test: tests/test_buy_1_t_shirt_bug.py::test_buy_product_1 (call)
+Start time: 2023-08-21 11:27:35.239769
+Start name method: authorization
+
+End time: 2023-08-21 11:27:48.931852
+End name method: authorization
+URL: https://elitesport.ge/en/
+
+-----
+
+-----
+Test: tests/test_buy_1_t_shirt_bug.py::test_buy_product_1 (call)
+Start time: 2023-08-21 11:27:48.932978
+Start name method: filter_and_choose_t_shirt
+
+End time: 2023-08-21 11:28:18.909069
+End name method: filter_and_choose_t_shirt
+URL: https://elitesport.ge/en/mens-t-shirt-hypers-23007-02/
+
+-----
+
+-----
+Test: tests/test_buy_1_t_shirt_bug.py::test_buy_product_1 (call)
+Start time: 2023-08-21 11:28:18.910128
+Start name method: t_shirt_paul_and_shark_add_to_cart
+
+End time: 2023-08-21 11:28:20.633248
+End name method: t_shirt_paul_and_shark_add_to_cart
+URL: https://elitesport.ge/en/mens-t-shirt-hypers-23007-02/
+
+-----

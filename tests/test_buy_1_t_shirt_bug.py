@@ -1,4 +1,5 @@
 from time import sleep
+import allure
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from pages.Login_page import Login
@@ -7,6 +8,7 @@ from pages.Products_page import Products
 
 
 #@pytest.mark.run(order=1)
+@allure.description('Test of buying product №1')
 def test_buy_product_1():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", False)  # False/True Закрытие/нет браузера

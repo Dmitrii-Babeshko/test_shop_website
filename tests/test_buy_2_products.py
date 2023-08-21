@@ -1,7 +1,7 @@
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
-
+import allure
 from pages.Cart_page import Cart
 from pages.Login_page import Login
 from pages.Men_Cloth_page import Men_Cloth
@@ -9,6 +9,7 @@ from pages.Products_page import Products
 
 
 #@pytest.mark.run(order=1)
+@allure.description('Test of buying products № 2')
 def test_buy_product_2():
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)  # False/True Закрытие/нет браузера
@@ -32,4 +33,3 @@ def test_buy_product_2():
     products_page.click_go_to_cart()
     cart_page = Cart(driver)
     cart_page.check_total_to_pay(products_page.sum_price)
-    sleep(10)

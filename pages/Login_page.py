@@ -1,13 +1,11 @@
 from base.base_class import Base
 from utilities.logger import Logger
+import allure
 
 
 class Login(Base):
 
     url = 'https://elitesport.ge/en/'
-
-    def __init__(self, driver):
-        super().__init__(driver)
 
     #locators xpath
     login_text_xpath = '4ssss@mail.ru'
@@ -57,12 +55,13 @@ class Login(Base):
     #Methods
 
     def authorization(self):
-        Logger.add_start_step(method='authorization')
-        self.driver.get(self.url)
-        self.driver.maximize_window()
-        self.click_login_button()
-        self.input_login_email(self.login_text_xpath)
-        self.input_password(self.password_text_xpath)
-        self.click_login_continue_button()
-        self.assert_word(self.get_cabinet_user_name(), 'Dimitrii')
-        Logger.add_end_step(url=self.driver.current_url, method='authorization')
+        with allure.step('authorization'):
+            Logger.add_start_step(method='authorization')
+            self.driver.get(self.url)
+            self.driver.maximize_window()
+            self.click_login_button()
+            self.input_login_email(self.login_text_xpath)
+            self.input_password(self.password_text_xpath)
+            self.click_login_continue_button()
+            self.assert_word(self.get_cabinet_user_name(), 'Dimitrii')
+            Logger.add_end_step(url=self.driver.current_url, method='authorization')
